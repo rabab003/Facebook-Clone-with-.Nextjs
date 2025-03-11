@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Header from "../../Components/Header";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       </Head>
 
       {/* Header */}
+      <Header />
 
       <main>
         {/* sidebar */}
