@@ -1,7 +1,6 @@
 import Image from "next/image";
 import img from "../public/Facebook_Logo_2023.png";
-import HeaderIcon from "./HeaderIcon"; // Ensure this path is correct
-
+import HeaderIcon from "./HeaderIcon";
 import {
   FlagIcon,
   HomeIcon,
@@ -9,11 +8,7 @@ import {
   PlayIcon,
   ShoppingBagIcon,
   UserGroupIcon,
-  ViewGridIcon,
-  ChatIcon,
-  BellIcon,
-  ChevronDownIcon,
-} from "@heroicons/react/24/outline"; // Ensure this import is correct
+} from "@heroicons/react/24/outline";
 
 export default function Header() {
   return (
@@ -39,8 +34,7 @@ export default function Header() {
 
       {/* center */}
       <div className="flex justify-center flex-grow">
-        <div className="flex space-x-1 md:space-x-2">
-          {/* <HeaderIcon Icon={HomeIcon} active={true} /> */}
+        <div className="flex space-x-1 md:space-x-2 ">
           <HeaderIcon active Icon={HomeIcon} />
           <HeaderIcon Icon={FlagIcon} />
           <HeaderIcon Icon={PlayIcon} />
@@ -51,12 +45,7 @@ export default function Header() {
 
       {/* right */}
       <div>
-        {/* profile picture */}
         <p className="whitespace-nowrap font-semibold pr-3">rabab qasim</p>
-        <ViewGridIcon className="Icon" />
-        <ChatIcon className="Icon" />
-        <BellIcon className="Icon" />
-        <ChevronDownIcon className="Icon" />
       </div>
     </div>
   );
